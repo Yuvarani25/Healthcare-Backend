@@ -1,0 +1,75 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:3000"
+              - "http://localhost:5173"
+            allowedMethods: [GET, POST, PUT, PATCH, DELETE, OPTIONS]
+            allowedHeaders: [Authorization, Content-Type]
+            allowCredentials: true
+      routes:
+        - id: user-service-auth
+          uri: lb://user-service
+          predicates:
+            - Path=/api/auth/**
+
+        - id: user-service-users
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+
+        - id: vitals-service-patients
+          uri: lb://vitals-service
+          predicates:
+            - Path=/api/patients/**
+
+        - id: vitals-service-vitals
+          uri: lb://vitals-service
+          predicates:
+            - Path=/api/vitals/**
+
+        - id: alert-service-alerts
+          uri: lb://alert-service
+          predicates:
+            - Path=/api/alerts/**
+
+        - id: alert-service-rules
+          uri: lb://alert-service
+          predicates:
+            - Path=/api/alert-rules/**
+
+        - id: analytics-service
+          uri: lb://analytics-gateway-service
+          predicates:
+            - Path=/api/analytics/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+jwt:
+  secret: ${JWT_SECRET:ChangeThisToALongRandomSecretKeyForHS256SigningAtLeast32Bytes!}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO

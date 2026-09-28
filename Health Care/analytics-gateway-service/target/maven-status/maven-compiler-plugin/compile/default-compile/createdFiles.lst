@@ -1,0 +1,9 @@
+com\healthcare\analyticsgateway\dto\PatientTrendResponse.class
+com\healthcare\analyticsgateway\exception\GlobalExceptionHandler.class
+com\healthcare\analyticsgateway\AnalyticsGatewayApplication.class
+com\healthcare\analyticsgateway\dto\MetricSummary.class
+com\healthcare\analyticsgateway\client\AnalyticsFeignConfig.class
+com\healthcare\analyticsgateway\controller\AnalyticsController.class
+com\healthcare\analyticsgateway\client\AnalyticsFeignClient.class
+com\healthcare\analyticsgateway\exception\AnalyticsUnavailableException.class
+com\healthcare\analyticsgateway\service\AnalyticsService.class

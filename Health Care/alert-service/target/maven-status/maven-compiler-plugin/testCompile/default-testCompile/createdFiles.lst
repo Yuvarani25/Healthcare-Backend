@@ -1,0 +1,3 @@
+com\healthcare\alertservice\service\AlertServiceTest.class
+com\healthcare\alertservice\AlertServiceApplicationTests.class
+com\healthcare\alertservice\service\AlertRuleServiceTest.class

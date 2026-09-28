@@ -1,0 +1,4 @@
+com\healthcare\vitalsservice\service\AlertDispatcherTest.class
+com\healthcare\vitalsservice\service\VitalServiceTest.class
+com\healthcare\vitalsservice\VitalsServiceApplicationTests.class
+com\healthcare\vitalsservice\service\PatientServiceTest.class

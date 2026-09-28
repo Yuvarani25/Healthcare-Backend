@@ -1,0 +1,4 @@
+com\healthcare\userservice\security\JwtUtilTest.class
+com\healthcare\userservice\service\UserServiceTest.class
+com\healthcare\userservice\UserServiceApplicationTests.class
+com\healthcare\userservice\service\AuthServiceTest.class

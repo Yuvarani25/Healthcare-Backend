@@ -1,0 +1,9 @@
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\AnalyticsGatewayApplication.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\client\AnalyticsFeignClient.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\client\AnalyticsFeignConfig.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\controller\AnalyticsController.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\dto\MetricSummary.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\dto\PatientTrendResponse.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\exception\AnalyticsUnavailableException.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\exception\GlobalExceptionHandler.java
+C:\Users\MU20696189\Downloads\Health Care\analytics-gateway-service\src\main\java\com\healthcare\analyticsgateway\service\AnalyticsService.java

@@ -1,0 +1,3 @@
+com\healthcare\apigateway\security\JwtValidator.class
+com\healthcare\apigateway\security\JwtAuthenticationFilter.class
+com\healthcare\apigateway\ApiGatewayApplication.class
